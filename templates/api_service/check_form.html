@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <section id="order">
+        <h2>Принтер: {{ printer_type }}</h2>
+        <h3>Заказ номер: {{ order_id }}</h3>
+
+        <h3>Заказ:</h3>
+        {% for order in order_list %}
+            <h5><b>{{ order.name }}</b>: {{ order.value }}</h5>
+        {% endfor %}
+    </section>
+</body>
+</html>
